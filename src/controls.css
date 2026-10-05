@@ -1,0 +1,61 @@
+.filter-form{display:flex;flex-direction:column;gap:13px}.filter-form label{display:flex;flex-direction:column;gap:6px;font-size:10px;font-weight:650;color:#59657a}.filter-form select{height:36px;padding:0 10px;border:1px solid #e1e5ec;border-radius:6px;background:#fff;color:#344057;font-size:11px}.filter-dot{height:6px;width:6px;border-radius:50%;background:#415ff2;margin-left:1px}.dropdown-label{padding:8px 10px 6px;color:#8c96a6;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}.dropdown-divider{height:1px;background:#edf0f4;margin:4px 6px}.notice-list{padding-top:8px!important;padding-bottom:8px!important}.notice-item{display:flex;align-items:center;gap:10px;padding:11px 1px;border-bottom:1px solid #f0f2f5}.notice-item:last-child{border-bottom:0}.notice-icon{height:32px;width:32px;flex:none;border-radius:8px;background:#fff4e8;color:#c17a2d;display:grid;place-items:center}.notice-icon.warning{background:#fff0ee;color:#d2584d}.notice-item>div{display:flex;flex:1;flex-direction:column;gap:4px}.notice-item b{font-size:10px;color:#435067}.notice-item small{font-size:9px;color:#8c96a6;line-height:1.4}.notice-item .button{height:29px}.notice-empty{display:flex;flex-direction:column;align-items:center;gap:7px;padding:26px;color:#8c96a6}.notice-empty svg{color:#1ea66b}.notice-empty b{font-size:12px;color:#536077}.notice-empty span{font-size:10px}.help-links{display:flex;flex-direction:column;gap:6px;padding-top:16px;padding-bottom:16px}.help-links button{display:flex;align-items:center;gap:10px;width:100%;border:1px solid #edf0f4;background:white;color:#4d5a71;padding:10px 12px;border-radius:7px;text-align:left;font-size:11px}.help-links button:hover{background:#f8f9fd;border-color:#dce2f0;color:#3655e9}
+
+@media(max-width:820px){
+  body{min-width:0;overflow-x:hidden}
+  .sidebar{width:64px;padding:12px 7px}
+  .brand{justify-content:center;padding:0;margin-bottom:16px}
+  .brand-copy,.brand>svg,.nav-label,.nav-item span,.cash-detail,.cash-head b,.cash-head .status-pill,.cash-card p,.user-box>div:nth-child(2){display:none}
+  .nav-scroll{overflow-x:hidden}
+  .nav-section{margin-bottom:13px}
+  .nav-item{justify-content:center;width:48px;padding:0;margin:3px 0}
+  .cash-card{padding:8px 4px;margin:8px 0;display:flex;flex-direction:column;align-items:center;gap:6px}
+  .cash-head{justify-content:center}
+  .cash-button{width:46px;padding:0;font-size:0}
+  .cash-button::after{content:'Caja';font-size:9px}
+  .user-box{justify-content:center;padding:12px 0 0}
+  .main-area{margin-left:64px;min-width:0}
+  .topbar{padding:0 16px}
+  .content{padding:24px 16px 36px}
+  .pos-layout,.customers-layout{grid-template-columns:minmax(0,1fr)}
+  .customers-layout{gap:14px}
+  .pos-left{min-height:0}
+  .inventory-summary{grid-template-columns:1fr}
+  .close-cash-form{grid-template-columns:minmax(0,1fr)}
+  .close-cash-form .button{grid-column:auto}
+  .variant-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 58px 30px;gap:5px}
+}
+@media(max-width:560px){
+  .topbar{height:54px;padding:0 11px}
+  .crumb{gap:6px;font-size:10px}
+  .top-actions{gap:5px}
+  .content{padding:18px 11px 28px}
+  .page-heading{align-items:flex-start;flex-direction:column;gap:13px;margin-bottom:17px}
+  .page-heading h1{font-size:22px}
+  .heading-actions{width:100%;flex-wrap:wrap}
+  .heading-actions .button{flex:1}
+  .toolbar{gap:6px}
+  .toolbar .filter-btn{padding:0 9px}
+  .panel-heading{padding:14px 12px 12px}
+  .panel-heading .button{flex:none}
+  .table-footer{padding:12px}
+  .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat-card{padding:13px}
+  .cash-totals{grid-template-columns:1fr}
+  .payment-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 30px;gap:6px}
+  .variant-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 48px 28px;gap:4px}
+  .variant-row input{padding:0 5px;font-size:9px}
+  .variant-row .icon-button{width:27px;height:30px}
+  .variant-actions{gap:8px;align-items:flex-end}
+  .variant-actions>span{font-size:9px}
+  .modal-backdrop{align-items:flex-start;padding:10px}
+  .modal{width:100%;max-height:calc(100vh - 20px);border-radius:10px}
+  .modal-header{padding:15px 15px 12px}
+  .modal-header h2{font-size:17px}
+  .modal-body{padding:0 15px}
+  .modal-footer{padding:11px 15px}
+  .form-grid{grid-template-columns:minmax(0,1fr)}
+  .span-2{grid-column:auto}
+  .cash-manager{width:100%}
+  .cash-manager .modal-body{padding-left:14px;padding-right:14px}
+  .receipt-line{gap:6px;font-size:8px}
+}
