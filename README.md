@@ -44,7 +44,3 @@ npm run test:stock
 La prueba de integración inicia una API y una base SQLite temporales; no modifica la base local del kiosco.
 
 El ticket es interno y no emite factura fiscal. La base y sus registros de muestra son locales; no se envían a un servicio externo.
-
-## Publicación web
-
-Cloudflare Pages construye el frontend con `npm run build` y publica `dist/`. El backend Node.js y SQLite quedan para ejecución local.
